@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+<link>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet" >
   <title>Final Project</title>
 </head>
 <body>
 
   <section>
-    <form id="login-form">
+    <form class="login-form">
       <input type="text" placeholder="What's your name?" required >
       <button type="submit">LogIn</button>
     </form>
+    <h2 class="greetingText hidden"></h2>
   </section>
 
   <section class="clock">
@@ -20,14 +22,13 @@
   </section>
 
   <section>
-    <form id="todo-form">
+    <form class="todo-form">
         <input type="text" placeholder="Write a To Do and Press Enter" required />
-      </form>
-      <ul id="todo-list"></ul>
+    </form>
+    <ul class="todo-list"></ul>
   </section>
 
-    <div id="weather">
-      <span></span>
+    <div class="weather">
       <span></span>
     </div>
 
