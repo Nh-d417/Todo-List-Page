@@ -5,32 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <title>Final Project</title>
 </head>
 <body>
+  <div class="weather">
+    <span></span>
+  </div>
 
-  <section>
+  <section class="login">
     <form class="login-form">
       <input type="text" placeholder="What's your name?" required >
       <button type="submit">LogIn</button>
     </form>
-    <h2 class="greetingText hidden"></h2>
+    <p class="greetingText hidden"></p>
   </section>
 
   <section class="clock">
-    <span class="realTime">00:00:00</span>
+    <h1 class="realTime">00:00:00</h1>
   </section>
 
-  <section>
+  <section class="todo">
     <form class="todo-form">
         <input type="text" placeholder="Write a To Do and Press Enter" required />
     </form>
     <ul class="todo-list"></ul>
   </section>
-
-    <div class="weather">
-      <span></span>
-    </div>
 
     <script src="js/login.js"></script>
     <script src="js/clock.js"></script>

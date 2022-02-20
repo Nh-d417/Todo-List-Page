@@ -1,3 +1,12 @@
-const body = document.querySelector("body");
+const image = [
+  "img/note.jpg",
+  "img/paper.jpg"
+];
 
-body.style.background = "#999";
+
+  const num = Math.floor(Math.random()*image.length);
+  
+  const img = document.createElement("img");
+  img.src = image[num];
+  
+  document.body.prepend(img);
