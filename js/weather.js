@@ -12,7 +12,6 @@ function onTure(event){
     .then((result)=>{
       const city = result.name;
       const weather = result.weather[0].main;
-      console.log(result);
       weatherText.innerText =`${city}, ${weather}`
     });
 }
